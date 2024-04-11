@@ -13,13 +13,20 @@ void main() {
       final postRepository =
           PostsRepositoryTestImpl(postsDatasource: validDatasource);
       final usecase = GetPostsUsecase(postRepository);
+      final results = await usecase.execute();
+      expect(results.isNotEmpty, true);
+    });
+
+    test('Given invalid post datasrouce, getPostsUseCase should throw error',
+        () async {
+      final datasource = await MockPostsDatasource.shared.getInvalidPosts();
+      final postRepository =
+          PostsRepositoryTestImpl(postsDatasource: datasource);
+      final usecase = GetPostsUsecase(postRepository);
       try {
-        final results = await usecase.execute();
-        expect(results.isNotEmpty, true);
-      } catch (error) {
-        fail(
-            'getPostsUseCase should not throw error when data is valid: $error');
-      }
+        await usecase.execute();
+        fail('getPostsUseCase should not be success');
+      } catch (error) {}
     });
   });
 }
