@@ -1,0 +1,17 @@
+include: package:very_good_analysis/analysis_options.yaml
+linter:
+  rules:
+    public_member_api_docs: false
+analyzer:    
+  errors:
+    invalid_annotation_target: ignore
+    no_default_cases: ignore
+    always_use_package_imports: ignore
+    avoid_void_async: ignore
+    library_private_types_in_public_api: ignore
+    implicit_dynamic_type: ignore
+    implicit_dynamic_method: ignore
+    one_member_abstracts: ignore
+    avoid_positional_boolean_parameters: ignore
+    sort_pub_dependencies: ignore
+    
