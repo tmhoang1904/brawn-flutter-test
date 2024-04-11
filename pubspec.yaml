@@ -45,6 +45,7 @@ dependencies:
   formz: ^0.6.0
   equatable: ^2.0.5
   json_annotation: ^4.8.1
+  url_launcher: ^6.2.4
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +60,7 @@ dev_dependencies:
   json_serializable: ^6.7.0
   very_good_analysis: ^5.0.0+1
   freezed: ^2.4.1
+  test: ^1.24.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
