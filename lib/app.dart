@@ -46,7 +46,7 @@ class _MyAppState extends State<App> with NetworkAwareState {
     final context = NavigationService.navigatorKey.currentState?.context;
     if (context != null) {
       ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text("You're offline.")));
+          .showSnackBar(const SnackBar(content: Text("You're online.")));
     }
   }
 }
