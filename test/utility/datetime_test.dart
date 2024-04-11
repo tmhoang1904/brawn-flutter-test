@@ -18,8 +18,8 @@ void main() {
       expect(dateTimeHelper.formatPostDate(date), '1 minute ago');
     });
 
-    test(
-        'Given date diff is more than 1 min but under 60 mins, format "X minutes ago"',
+    test('''
+Given date diff is more than 1 min but under 60 mins, format "X minutes ago"''',
         () {
       var date = DateTime.now();
       const diffMinute = 30;
@@ -34,9 +34,8 @@ void main() {
       expect(dateTimeHelper.formatPostDate(date), '1 hour ago');
     });
 
-    test(
-        'Given date diff is more 1 hour but under 24 hours, format "X hours ago"',
-        () {
+    test('''
+Given date diff is more 1 hour but under 24 hours, format "X hours ago"''', () {
       var date = DateTime.now();
       const diffHour = 23;
       date = date.subtract(const Duration(hours: diffHour));

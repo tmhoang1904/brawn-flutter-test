@@ -1,4 +1,3 @@
-import 'package:brawn_app_test/data/common/api_exception.dart';
 import 'package:brawn_app_test/data/repository/posts/posts_repository.dart';
 import 'package:brawn_app_test/domain/posts/usecases/get_posts.usecase.dart';
 import 'package:brawn_app_test/models/posts/response/post.model.dart';

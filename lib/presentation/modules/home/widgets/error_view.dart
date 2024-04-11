@@ -36,7 +36,7 @@ class ErrorView extends StatelessWidget {
           ),
           TextButton(
             onPressed: onRetryPressed,
-            child: Text(
+            child: const Text(
               'Retry',
             ),
           ),

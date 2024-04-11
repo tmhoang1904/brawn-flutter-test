@@ -1,6 +1,5 @@
 import 'package:brawn_app_test/presentation/utility/datetime.dart';
 import 'package:brawn_app_test/presentation/utility/dimensions.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -66,7 +65,8 @@ class PostItemView extends StatelessWidget {
             ],
           ),
         ),
-        // Image urls are returning status 403, which can not be used from the outside world
+        // Image urls are returning status 403,
+        // which can not be used from the outside world
         // if (previewURL != null)
         //   SizedBox(
         //     width: Dimensions.spacingMedium,
