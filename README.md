@@ -22,3 +22,13 @@ samples, guidance on mobile development, and a full API reference.
 - Cocoapods (No need to care if using bundler): 1.14.3
 - Xcode: 15.2
 - Java: openjdk 17.0.9
+
+## Improvements
+
+- If I have more time, there are some improvements which I can implement.
+
+1. Pull to refresh.
+2. Implementing BLoC.
+3. Persists data in local database.
+4. Add empty view in case of empty data.
+5. Add more unit tests for repositories using Mock Adapter.
